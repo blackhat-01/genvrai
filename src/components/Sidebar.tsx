@@ -67,7 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
   return (
     <div className={`w-72 flex flex-col h-screen shadow-sm fixed left-0 top-0 z-10 transition-colors duration-300 transform lg:translate-x-0 -translate-x-full ${
       isDark 
-        ? 'bg-gray-900 border-r border-gray-700' 
+        ? 'bg-black border-r border-gray-800' 
         : 'bg-white border-r border-gray-200'
     }`}>
       {/* Header */}
@@ -108,7 +108,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
 
       {/* Footer */}
       <div className={`p-4 space-y-4 border-t transition-colors duration-300 ${
-        isDark ? 'border-gray-900' : 'border-gray-200'
+        isDark ? 'border-gray-800' : 'border-gray-200'
       }`}>
         <div className={`flex items-center justify-between text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
           <button className={`transition-colors ${

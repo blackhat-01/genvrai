@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, TrendingUp, Clock, Users } from 'lucide-react';
+import { Star, TrendingUp, Clock, Users, Zap, Eye, Video, Mic, Music, Code } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const FeaturedModels: React.FC = () => {
@@ -8,6 +8,7 @@ const FeaturedModels: React.FC = () => {
   const featuredModels = [
     {
       name: 'DALL-E 3',
+      logo: Zap,
       category: 'Image Generation',
       description: 'Advanced text-to-image generation with exceptional detail and creativity',
       rating: 4.9,
@@ -18,6 +19,7 @@ const FeaturedModels: React.FC = () => {
     },
     {
       name: 'GPT-4 Vision',
+      logo: Eye,
       category: 'Multimodal',
       description: 'Understand and analyze images with advanced language capabilities',
       rating: 4.8,
@@ -28,6 +30,7 @@ const FeaturedModels: React.FC = () => {
     },
     {
       name: 'Stable Video',
+      logo: Video,
       category: 'Video Generation',
       description: 'Create high-quality videos from text prompts and images',
       rating: 4.7,
@@ -38,6 +41,7 @@ const FeaturedModels: React.FC = () => {
     },
     {
       name: 'ElevenLabs Voice',
+      logo: Mic,
       category: 'Voice Synthesis',
       description: 'Natural voice cloning and text-to-speech generation',
       rating: 4.9,
@@ -48,6 +52,7 @@ const FeaturedModels: React.FC = () => {
     },
     {
       name: 'MusicGen',
+      logo: Music,
       category: 'Music Generation',
       description: 'Compose original music tracks from text descriptions',
       rating: 4.6,
@@ -58,6 +63,7 @@ const FeaturedModels: React.FC = () => {
     },
     {
       name: 'CodeLlama',
+      logo: Code,
       category: 'Code Generation',
       description: 'Advanced code generation and programming assistance',
       rating: 4.8,
@@ -89,7 +95,7 @@ const FeaturedModels: React.FC = () => {
             key={model.name}
             className={`group rounded-2xl border overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 ${
               isDark 
-                ? 'bg-gray-800 border-gray-700' 
+                ? 'bg-black border-gray-800' 
                 : 'bg-white border-gray-200'
             }`}
           >
@@ -126,14 +132,21 @@ const FeaturedModels: React.FC = () => {
                 </div>
               </div>
               
-              <h3 className={`text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors duration-300 ${
-                isDark ? 'text-white' : 'text-gray-900'
-              }`}>
-                {model.name}
-              </h3>
+              <div className="flex items-center space-x-3 mb-2">
+                <div className={`p-2 rounded-lg ${
+                  isDark ? 'bg-gray-800' : 'bg-gray-100'
+                }`}>
+                  <model.logo size={20} className="text-blue-600" />
+                </div>
+                <h3 className={`text-xl font-bold group-hover:text-blue-600 transition-colors duration-300 ${
+                  isDark ? 'text-white' : 'text-gray-900'
+                }`}>
+                  {model.name}
+                </h3>
+              </div>
               
               <p className={`text-sm leading-relaxed mb-4 transition-colors duration-300 ${
-                isDark ? 'text-gray-400' : 'text-gray-600'
+                isDark ? 'text-white' : 'text-gray-900'
               }`}>
                 {model.description}
               </p>
