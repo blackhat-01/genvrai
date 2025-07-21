@@ -97,7 +97,7 @@ const ModelCategories: React.FC = () => {
               </div>
               <span className={`text-sm font-semibold px-3 py-1 rounded-full ${
                 isDark 
-                  ? 'bg-gray-800 text-gray-400' 
+                  ? 'bg-gray-700 text-gray-300' 
                   : 'bg-gray-100 text-gray-600'
               }`}>
                 {category.modelCount} models

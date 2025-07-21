@@ -67,7 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
   return (
     <div className={`w-72 flex flex-col h-screen shadow-sm fixed left-0 top-0 z-10 transition-colors duration-300 transform lg:translate-x-0 -translate-x-full ${
       isDark 
-        ? 'bg-black border-r border-gray-800' 
+        ? 'bg-gray-900 border-r border-gray-700' 
         : 'bg-white border-r border-gray-200'
     }`}>
       {/* Header */}

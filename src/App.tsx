@@ -14,7 +14,7 @@ function AppContent() {
 
   return (
     <div className={`min-h-screen flex transition-colors duration-300 ${
-      isDark ? 'bg-black' : 'bg-gray-50'
+      isDark ? 'bg-gray-900' : 'bg-gray-50'
     }`}>
       {/* Subtle grid pattern */}
       <div className={`fixed inset-0 ${isDark ? 'opacity-[0.05]' : 'opacity-[0.02]'}`}>

@@ -14,7 +14,7 @@ const FeaturedModels: React.FC = () => {
       usage: '2.3M',
       trending: true,
       creationTime: '18s',
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'GPT-4 Vision',
@@ -24,7 +24,7 @@ const FeaturedModels: React.FC = () => {
       usage: '1.8M',
       trending: true,
       creationTime: '25s',
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'Stable Video',
@@ -34,7 +34,7 @@ const FeaturedModels: React.FC = () => {
       usage: '890K',
       trending: false,
       creationTime: '32s',
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'ElevenLabs Voice',
@@ -44,7 +44,7 @@ const FeaturedModels: React.FC = () => {
       usage: '1.2M',
       trending: true,
       creationTime: '15s',
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/6913346/pexels-photo-6913346.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'MusicGen',
@@ -54,7 +54,7 @@ const FeaturedModels: React.FC = () => {
       usage: '650K',
       trending: false,
       creationTime: '45s',
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/6686445/pexels-photo-6686445.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'CodeLlama',
@@ -64,7 +64,7 @@ const FeaturedModels: React.FC = () => {
       usage: '1.1M',
       trending: true,
       creationTime: '22s',
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
   ];
 
@@ -89,7 +89,7 @@ const FeaturedModels: React.FC = () => {
             key={model.name}
             className={`group rounded-2xl border overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 ${
               isDark 
-                ? 'bg-black border-gray-800' 
+                ? 'bg-gray-800 border-gray-700' 
                 : 'bg-white border-gray-200'
             }`}
           >

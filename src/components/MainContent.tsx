@@ -79,7 +79,7 @@ const MainContent: React.FC = () => {
 
       {/* Featured Models Section */}
       <div className={`py-20 transition-colors duration-300 ${
-        isDark ? 'bg-black' : 'bg-gray-50'
+        isDark ? 'bg-gray-900' : 'bg-gray-50'
       }`}>
         <FeaturedModels />
       </div>
