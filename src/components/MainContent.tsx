@@ -47,18 +47,20 @@ const MainContent: React.FC = () => {
           <div className="flex justify-center pt-16">
             <button 
               onClick={() => {
-                const nextSection = document.getElementById('model-categories');
-                nextSection?.scrollIntoView({ behavior: 'smooth' });
+                window.scrollTo({
+                  top: window.innerHeight,
+                  behavior: 'smooth'
+                });
               }}
               className={`p-3 rounded-full border shadow-sm transition-all duration-300 group ${
                 isDark 
-                  ? 'bg-gray-800 hover:bg-gray-700 border-gray-700' 
+                  ? 'bg-black hover:bg-gray-900 border-gray-800' 
                   : 'bg-white hover:bg-gray-50 border-gray-200'
               }`}
             >
               <ChevronDown size={24} className={`group-hover:translate-y-0.5 transition-all ${
                 isDark 
-                  ? 'text-gray-400 group-hover:text-gray-200' 
+                  ? 'text-gray-400 group-hover:text-gray-300' 
                   : 'text-gray-400 group-hover:text-gray-600'
               }`} />
             </button>
@@ -68,14 +70,14 @@ const MainContent: React.FC = () => {
 
       {/* Model Categories Section */}
       <div id="model-categories" className={`py-20 transition-colors duration-300 ${
-        isDark ? 'bg-gray-800' : 'bg-white'
+        isDark ? 'bg-gray-900' : 'bg-white'
       }`}>
         <ModelCategories />
       </div>
 
       {/* Featured Models Section */}
       <div className={`py-20 transition-colors duration-300 ${
-        isDark ? 'bg-gray-900' : 'bg-gray-50'
+        isDark ? 'bg-black' : 'bg-gray-50'
       }`}>
         <FeaturedModels />
       </div>

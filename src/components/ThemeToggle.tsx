@@ -10,7 +10,7 @@ const ThemeToggle: React.FC = () => {
       onClick={toggleTheme}
       className={`fixed top-6 right-6 z-20 p-3 rounded-full border transition-all duration-300 ${
         isDark
-          ? 'bg-gray-800 border-gray-700 text-yellow-400 hover:bg-gray-700'
+          ? 'bg-black border-gray-800 text-yellow-400 hover:bg-gray-900'
           : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'
       } shadow-lg hover:shadow-xl transform hover:scale-105`}
       aria-label="Toggle theme"

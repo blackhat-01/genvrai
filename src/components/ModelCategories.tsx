@@ -85,19 +85,19 @@ const ModelCategories: React.FC = () => {
             key={category.title}
             className={`group p-6 rounded-xl border hover:shadow-md transition-all duration-300 cursor-pointer ${
               isDark 
-                ? 'bg-gray-800 border-gray-700 hover:bg-gray-750' 
+                ? 'bg-gray-900 border-gray-800 hover:bg-gray-800' 
                 : 'bg-white border-gray-200 hover:bg-gray-50'
             }`}
           >
             <div className="flex items-center justify-between mb-4">
               <div className={`p-3 rounded-lg transition-colors duration-300 ${
-                isDark ? 'bg-gray-700' : 'bg-gray-100'
+                isDark ? 'bg-gray-800' : 'bg-gray-100'
               }`}>
                 <category.icon size={24} className={category.iconColor} />
               </div>
               <span className={`text-sm font-semibold px-3 py-1 rounded-full ${
                 isDark 
-                  ? 'bg-gray-700 text-gray-400' 
+                  ? 'bg-gray-800 text-gray-400' 
                   : 'bg-gray-100 text-gray-600'
               }`}>
                 {category.modelCount} models

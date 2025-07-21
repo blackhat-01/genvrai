@@ -52,10 +52,10 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
       className={`w-full flex items-center space-x-3 px-4 py-3 text-left rounded-lg transition-all duration-300 group ${
         isActive 
           ? isDark 
-            ? 'bg-gray-800 text-white' 
+            ? 'bg-gray-900 text-white' 
             : 'bg-gray-100 text-gray-900'
           : isDark
-            ? 'text-gray-400 hover:bg-gray-800 hover:text-white'
+            ? 'text-gray-400 hover:bg-gray-900 hover:text-white'
             : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
       }`}
     >
@@ -67,7 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
   return (
     <div className={`w-72 flex flex-col h-screen shadow-sm fixed left-0 top-0 z-10 transition-colors duration-300 ${
       isDark 
-        ? 'bg-gray-900 border-r border-gray-800' 
+        ? 'bg-black border-r border-gray-800' 
         : 'bg-white border-r border-gray-200'
     }`}>
       {/* Header */}
@@ -108,7 +108,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
 
       {/* Footer */}
       <div className={`p-4 space-y-4 border-t transition-colors duration-300 ${
-        isDark ? 'border-gray-800' : 'border-gray-200'
+        isDark ? 'border-gray-900' : 'border-gray-200'
       }`}>
         <div className={`flex items-center justify-between text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
           <button className={`transition-colors ${
@@ -125,7 +125,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-              isDark ? 'bg-gray-700' : 'bg-gray-900'
+              isDark ? 'bg-gray-800' : 'bg-gray-900'
             }`}>
               <User size={16} className={isDark ? 'text-gray-300' : 'text-white'} />
             </div>
