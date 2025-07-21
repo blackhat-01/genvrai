@@ -72,12 +72,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
     }`}>
       {/* Header */}
       <div className="p-6">
-        <div className="flex items-center space-x-3">
-          <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${isDark ? 'bg-white' : 'bg-gray-900'}`}>
-            <span className={`font-bold text-sm ${isDark ? 'text-gray-900' : 'text-white'}`}>GV</span>
-          </div>
-          <span className={`text-xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>GenVR</span>
-        </div>
+        <span className={`text-xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>GenVR</span>
       </div>
 
       {/* Navigation */}
@@ -115,7 +110,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'home', onItemClick }) =
       <div className={`p-4 space-y-4 border-t transition-colors duration-300 ${
         isDark ? 'border-gray-800' : 'border-gray-200'
       }`}>
-        <div className={`flex items-center space-x-4 text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+        <div className={`flex items-center justify-between text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
           <button className={`transition-colors ${
             isDark ? 'hover:text-white' : 'hover:text-gray-900'
           }`}>Support</button>
