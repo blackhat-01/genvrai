@@ -89,7 +89,7 @@ const FeaturedModels: React.FC = () => {
             key={model.name}
             className={`group rounded-2xl border overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 ${
               isDark 
-                ? 'bg-gray-900 border-gray-800' 
+                ? 'bg-black border-gray-800' 
                 : 'bg-white border-gray-200'
             }`}
           >

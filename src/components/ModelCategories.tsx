@@ -85,7 +85,7 @@ const ModelCategories: React.FC = () => {
             key={category.title}
             className={`group p-6 rounded-xl border hover:shadow-md transition-all duration-300 cursor-pointer ${
               isDark 
-                ? 'bg-gray-900 border-gray-800 hover:bg-gray-800' 
+                ? 'bg-black border-gray-800 hover:bg-gray-900' 
                 : 'bg-white border-gray-200 hover:bg-gray-50'
             }`}
           >
