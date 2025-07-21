@@ -18,13 +18,13 @@ const CompanyLogos: React.FC = () => {
   ];
 
   return (
-    <div className="mt-16 max-w-4xl mx-auto">
+    <div className="mt-12 lg:mt-16 max-w-4xl mx-auto px-4">
       <div className="relative overflow-hidden">
-        <div className="flex animate-marquee space-x-12 opacity-60">
+        <div className="flex animate-marquee space-x-8 sm:space-x-12 opacity-60">
           {[...companies, ...companies].map((company, index) => (
             <div
               key={`${company.name}-${index}`}
-              className={`font-medium text-lg transition-all duration-300 cursor-pointer transform hover:scale-105 whitespace-nowrap ${
+              className={`font-medium text-sm sm:text-lg transition-all duration-300 cursor-pointer transform hover:scale-105 whitespace-nowrap ${
                 isDark 
                   ? 'text-gray-500 hover:text-gray-300' 
                   : 'text-gray-400 hover:text-gray-600'

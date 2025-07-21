@@ -7,26 +7,26 @@ const SearchBar: React.FC = () => {
   const { isDark } = useTheme();
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative max-w-4xl mx-auto px-4 sm:px-0">
       <div className={`relative rounded-2xl border overflow-hidden shadow-lg transition-colors duration-300 ${
         isDark 
           ? 'bg-gray-900 border-gray-800' 
           : 'bg-white border-gray-200'
       }`}>
-        <div className="flex items-center px-6 py-4">
-          <Search className={`mr-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}`} size={20} />
+        <div className="flex items-center px-4 sm:px-6 py-4">
+          <Search className={`mr-3 sm:mr-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}`} size={20} />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Tell us what you want to create — we'll match you with the best model."
-            className={`flex-1 bg-transparent text-lg focus:outline-none transition-colors duration-300 ${
+            className={`flex-1 bg-transparent text-sm sm:text-lg focus:outline-none transition-colors duration-300 ${
               isDark 
                 ? 'text-white placeholder-gray-400' 
                 : 'text-gray-900 placeholder-gray-500'
             }`}
           />
-          <button className={`ml-4 p-2 rounded-full transition-all duration-300 group ${
+          <button className={`ml-3 sm:ml-4 p-2 rounded-full transition-all duration-300 group ${
             isDark 
               ? 'bg-white hover:bg-gray-200' 
               : 'bg-gray-900 hover:bg-gray-800'
@@ -37,12 +37,12 @@ const SearchBar: React.FC = () => {
           </button>
         </div>
         
-        <div className={`flex items-center space-x-4 px-6 py-4 border-t transition-colors duration-300 ${
+        <div className={`flex items-center flex-wrap gap-2 sm:gap-4 px-4 sm:px-6 py-4 border-t transition-colors duration-300 ${
           isDark 
             ? 'bg-black border-gray-800' 
             : 'bg-gray-50 border-gray-200'
         }`}>
-          <button className={`flex items-center space-x-2 px-4 py-2 rounded-lg border transition-all duration-300 ${
+          <button className={`flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg border transition-all duration-300 ${
             isDark 
               ? 'bg-blue-900 hover:bg-blue-800 border-blue-700 text-blue-300' 
               : 'bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-700'
@@ -51,7 +51,7 @@ const SearchBar: React.FC = () => {
             <span className="text-sm font-medium">GenVR Play</span>
           </button>
           
-          <button className={`flex items-center space-x-2 px-4 py-2 rounded-lg border transition-all duration-300 ${
+          <button className={`flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg border transition-all duration-300 ${
             isDark 
               ? 'bg-gray-800 hover:bg-gray-700 border-gray-800 text-gray-300' 
               : 'bg-white hover:bg-gray-50 border-gray-200 text-gray-600'
@@ -60,7 +60,7 @@ const SearchBar: React.FC = () => {
             <span className="text-sm font-medium">Filter</span>
           </button>
           
-          <button className={`flex items-center space-x-2 px-4 py-2 rounded-lg border transition-all duration-300 ${
+          <button className={`flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg border transition-all duration-300 ${
             isDark 
               ? 'bg-gray-800 hover:bg-gray-700 border-gray-800 text-gray-300' 
               : 'bg-white hover:bg-gray-50 border-gray-200 text-gray-600'

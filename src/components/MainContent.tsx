@@ -10,13 +10,13 @@ const MainContent: React.FC = () => {
   const { isDark } = useTheme();
 
   return (
-    <div className="ml-72">
+    <div className="lg:ml-72">
       {/* Main Content Area */}
-      <div className="min-h-screen flex items-center justify-center px-8 py-16 pb-32">
-        <div className="max-w-6xl mx-auto text-center space-y-8">
+      <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 pb-32">
+        <div className="max-w-6xl mx-auto text-center space-y-6 lg:space-y-8">
           {/* Hero Section */}
-          <div className="space-y-6">
-            <h1 className={`text-5xl md:text-6xl font-bold leading-tight transition-colors duration-300 ${
+          <div className="space-y-4 lg:space-y-6">
+            <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight transition-colors duration-300 ${
               isDark ? 'text-white' : 'text-gray-900'
             }`}>
               Explore Our{' '}
@@ -26,7 +26,7 @@ const MainContent: React.FC = () => {
               Library
             </h1>
             
-            <p className={`text-xl max-w-3xl mx-auto leading-relaxed transition-colors duration-300 ${
+            <p className={`text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed transition-colors duration-300 ${
               isDark ? 'text-gray-300' : 'text-gray-600'
             }`}>
               Dive into a diverse collection of over 225 advanced AI models,
@@ -36,7 +36,7 @@ const MainContent: React.FC = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="pt-8">
+          <div className="pt-6 lg:pt-8">
             <SearchBar />
           </div>
 
@@ -44,13 +44,15 @@ const MainContent: React.FC = () => {
           <CompanyLogos />
 
           {/* Scroll Indicator */}
-          <div className="flex justify-center pt-16">
+          <div className="flex justify-center pt-12 lg:pt-16">
             <button 
               onClick={() => {
-                window.scrollTo({
-                  top: window.innerHeight,
-                  behavior: 'smooth'
-                });
+                const categoriesSection = document.getElementById('model-categories');
+                if (categoriesSection) {
+                  categoriesSection.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }
               }}
               className={`p-3 rounded-full border shadow-sm transition-all duration-300 group ${
                 isDark 
@@ -70,7 +72,7 @@ const MainContent: React.FC = () => {
 
       {/* Model Categories Section */}
       <div id="model-categories" className={`py-20 transition-colors duration-300 ${
-        isDark ? 'bg-gray-900' : 'bg-white'
+        isDark ? 'bg-black' : 'bg-white'
       }`}>
         <ModelCategories />
       </div>

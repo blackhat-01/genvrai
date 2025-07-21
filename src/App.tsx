@@ -28,7 +28,7 @@ function AppContent() {
       {/* Theme Toggle */}
       <ThemeToggle />
 
-      {/* Sidebar */}
+      {/* Sidebar - Hidden on mobile */}
       <Sidebar activeItem={activeMenuItem} onItemClick={handleMenuItemClick} />
       
       {/* Main Content */}
