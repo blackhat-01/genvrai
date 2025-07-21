@@ -89,7 +89,7 @@ const FeaturedModels: React.FC = () => {
             key={model.name}
             className={`group rounded-2xl border overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 ${
               isDark 
-                ? 'bg-gray-800 border-gray-700' 
+                ? 'bg-gray-900 border-gray-800' 
                 : 'bg-white border-gray-200'
             }`}
           >
@@ -158,7 +158,7 @@ const FeaturedModels: React.FC = () => {
       <div className="text-center mt-12">
         <button className={`px-8 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 ${
           isDark 
-            ? 'bg-white hover:bg-gray-100 text-gray-900' 
+            ? 'bg-white hover:bg-gray-200 text-gray-900' 
             : 'bg-gray-900 hover:bg-gray-800 text-white'
         }`}>
           View All Models
