@@ -13,6 +13,7 @@ const FeaturedModels: React.FC = () => {
       rating: 4.9,
       usage: '2.3M',
       trending: true,
+      creationTime: '18s',
       image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
@@ -22,6 +23,7 @@ const FeaturedModels: React.FC = () => {
       rating: 4.8,
       usage: '1.8M',
       trending: true,
+      creationTime: '25s',
       image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
@@ -31,6 +33,7 @@ const FeaturedModels: React.FC = () => {
       rating: 4.7,
       usage: '890K',
       trending: false,
+      creationTime: '32s',
       image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
@@ -40,6 +43,7 @@ const FeaturedModels: React.FC = () => {
       rating: 4.9,
       usage: '1.2M',
       trending: true,
+      creationTime: '15s',
       image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
@@ -49,6 +53,7 @@ const FeaturedModels: React.FC = () => {
       rating: 4.6,
       usage: '650K',
       trending: false,
+      creationTime: '45s',
       image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
@@ -58,6 +63,7 @@ const FeaturedModels: React.FC = () => {
       rating: 4.8,
       usage: '1.1M',
       trending: true,
+      creationTime: '22s',
       image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
   ];
@@ -140,7 +146,7 @@ const FeaturedModels: React.FC = () => {
                   isDark ? 'text-gray-500' : 'text-gray-400'
                 }`}>
                   <Clock size={12} />
-                  <span className="text-xs">Updated recently</span>
+                  <span className="text-xs">Avg: {model.creationTime}</span>
                 </div>
               </div>
             </div>

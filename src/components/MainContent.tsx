@@ -12,7 +12,7 @@ const MainContent: React.FC = () => {
   return (
     <div className="ml-72">
       {/* Main Content Area */}
-      <div className="min-h-screen flex items-center justify-center px-8 py-16">
+      <div className="min-h-screen flex items-center justify-center px-8 py-16 pb-32">
         <div className="max-w-6xl mx-auto text-center space-y-8">
           {/* Hero Section */}
           <div className="space-y-6">
@@ -42,28 +42,28 @@ const MainContent: React.FC = () => {
 
           {/* Company Logos */}
           <CompanyLogos />
-        </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      <div className="flex justify-center pb-8 relative z-10">
-        <button 
-          onClick={() => {
-            const nextSection = document.getElementById('model-categories');
-            nextSection?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className={`p-3 rounded-full border shadow-sm transition-all duration-300 group ${
-            isDark 
-              ? 'bg-gray-800 hover:bg-gray-700 border-gray-700' 
-              : 'bg-white hover:bg-gray-50 border-gray-200'
-          }`}
-        >
-          <ChevronDown size={24} className={`group-hover:translate-y-0.5 transition-all ${
-            isDark 
-              ? 'text-gray-400 group-hover:text-gray-200' 
-              : 'text-gray-400 group-hover:text-gray-600'
-          }`} />
-        </button>
+          {/* Scroll Indicator */}
+          <div className="flex justify-center pt-16">
+            <button 
+              onClick={() => {
+                const nextSection = document.getElementById('model-categories');
+                nextSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={`p-3 rounded-full border shadow-sm transition-all duration-300 group ${
+                isDark 
+                  ? 'bg-gray-800 hover:bg-gray-700 border-gray-700' 
+                  : 'bg-white hover:bg-gray-50 border-gray-200'
+              }`}
+            >
+              <ChevronDown size={24} className={`group-hover:translate-y-0.5 transition-all ${
+                isDark 
+                  ? 'text-gray-400 group-hover:text-gray-200' 
+                  : 'text-gray-400 group-hover:text-gray-600'
+              }`} />
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Model Categories Section */}
